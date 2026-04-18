@@ -15,7 +15,15 @@ public class ResponseResult {
         this.data = data;
     }
 
-    public static ResponseResult ok(Object data) {
+    public static ResponseResult ok(String message, Object data) {
+        return new ResponseResult(true, message, data);
+    }
+
+    public static ResponseResult ok(String message) {
+        return new ResponseResult(true, message, null);
+    }
+
+    public static ResponseResult ok(Object data, String token) {
         return new ResponseResult(true, "OK", data);
     }
 

@@ -9,11 +9,13 @@ D:\handmade_market\backend\src\main\java\com\example\handmademarket\entity\Goods
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\HandmadeMarketBackendApplication.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\service\impl\AuthServiceImpl.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\dto\LoginRequest.java
+D:\handmade_market\backend\src\main\java\com\example\handmademarket\repository\AdminRepository.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\dto\RegisterRequest.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\service\AuthService.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\controller\GoodsController.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\repository\UserRepository.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\service\UserService.java
+D:\handmade_market\backend\src\main\java\com\example\handmademarket\entity\Admin.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\controller\UserController.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\config\SecurityConfig.java
 D:\handmade_market\backend\src\main\java\com\example\handmademarket\controller\OrderController.java
