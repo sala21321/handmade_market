@@ -1,20 +1,66 @@
 package com.example.handmademarket.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import lombok.Data;
 import java.util.Date;
 
 @Data
+@Entity
+@Table(name = "tb_user_credit")
 public class UserCredit {
-    // 主键
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    // 所属用户ID
+
     private Long userId;
-    // 当前信用分数（默认初始100分）
     private Integer creditScore;
-    // 信用等级：优秀/良好/一般/黑名单
     private String creditLevel;
-    // 状态：1正常 0封禁
     private Integer status;
-    // 数据最后更新时间
     private Date updateTime;
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public Integer getCreditScore() {
+        return creditScore;
+    }
+
+    public void setCreditScore(Integer creditScore) {
+        this.creditScore = creditScore;
+    }
+
+    public String getCreditLevel() {
+        return creditLevel;
+    }
+
+    public void setCreditLevel(String creditLevel) {
+        this.creditLevel = creditLevel;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
 }
